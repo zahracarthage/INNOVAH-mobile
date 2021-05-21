@@ -166,6 +166,7 @@ public class serviceEvenement {
         NetworkManager.getInstance().addToQueueAndWait(req);
         return Evenement;
     }
+    
     public boolean  Delete(int id){
        String url = statics.BASE_URL + "/evenement/deleteJson/" +id;
 

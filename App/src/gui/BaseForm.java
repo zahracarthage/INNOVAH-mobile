@@ -84,6 +84,7 @@ public class BaseForm extends Form {
                         new Label(res.getImage("profile-pic.jpg"), "PictureWhiteBackgrond"))
         ));
         
+        
         tb.addMaterialCommandToSideMenu("Newsfeed", FontImage.MATERIAL_UPDATE, e -> new NewsfeedForm(res).show());
         tb.addMaterialCommandToSideMenu("Ajouter une annonce repas", FontImage.MATERIAL_UPDATE, e -> new AddRepas(res).show());
         tb.addMaterialCommandToSideMenu("Annonce repas", FontImage.MATERIAL_UPDATE, e -> new Listedesrepas(res).show());
@@ -91,10 +92,11 @@ public class BaseForm extends Form {
         tb.addMaterialCommandToSideMenu("Liste des Articles", FontImage.MATERIAL_UPDATE, e -> new ListArticle(res).show());
         tb.addMaterialCommandToSideMenu("Ajouter une activité", FontImage.MATERIAL_UPDATE, e -> new AddActForm(res).show());
         tb.addMaterialCommandToSideMenu("List des activités", FontImage.MATERIAL_UPDATE, e -> new ListActForm(res).show());
-
-         
-
-
+        tb.addMaterialCommandToSideMenu("Liste des evenements", FontImage.MATERIAL_UPDATE, e -> new ListTestForm(res).show());
+        tb.addMaterialCommandToSideMenu("Ajouter un evnement", FontImage.MATERIAL_UPDATE, e -> new AddTestForm(res).show());
+        tb.addMaterialCommandToSideMenu("Effacer un evenement", FontImage.MATERIAL_UPDATE, e -> new DeleteTestForm(res).show());
+        tb.addMaterialCommandToSideMenu("Ajouter une maison d'hote", FontImage.MATERIAL_UPDATE, e -> new AjouterMaison(res).show());
+        tb.addMaterialCommandToSideMenu("Maison d'hotes ", FontImage.MATERIAL_UPDATE, e -> new AfficherListMaison(res).show());
 
 
 
